@@ -14,13 +14,13 @@
 | AppSettings__LinkDownloadAppAndroid | Google Play Store link to download the Android version of the mobile app.                                     | https://play.google.com/store/apps/... |
 | AppSettings__SupportInformation  | Public support documentation URL for users (https://docs.magiqcloud.com/Engagement/).                            | https://docs.magiqcloud.com/Engagement/ |
 | ENVIRONMENT_API_URL              | Base URL of the backend API for the current environment.                                                         | https://api.example.com              |
-| MYSQL_HOST                       | IP address or hostname of the MySQL database server.                                                             |                            |
-| MYSQL_PORT                       | Port used by the MySQL database server.                                                                          |                                  |
-| MYSQL_DATABASE                   | Name of the MySQL database to connect to.                                                                        |                            |
-| FIREBASE_API_KEY                 | Firebase API key used by frontend applications to access Firebase services.                                      |            |
-| FIREBASE_AUTH_DOMAIN             | Firebase Auth domain used during authentication.                                                                 |           |
-| FIREBASE_PROJECT_ID              | Firebase project ID for the current environment.                                                                 |            |
-| FIREBASE_STORAGE_BUCKET          | Firebase Storage bucket name.                                                                                    |  |
-| FIREBASE_MESSAGING_SENDER_ID     | Firebase Cloud Messaging sender ID.                                                                              |                          |
-| FIREBASE_APP_ID                  | Unique Firebase App ID used for identifying the project.                                                         | |
-| FIREBASE_MEASUREMENT_ID          | Google Analytics Measurement ID for Firebase analytics tracking.                                                 |                           |
+| MYSQL_HOST                       | IP address or hostname of the MySQL database server.                                                             ||
+| MYSQL_PORT                       | Port used by the MySQL database server.                                                                          ||
+| MYSQL_DATABASE                   | Name of the MySQL database to connect to.                                                                        ||
+| FIREBASE_API_KEY                 | Firebase API key used by frontend applications to access Firebase services.                                      ||
+| FIREBASE_AUTH_DOMAIN             | Firebase Auth domain used during authentication.                                                                 ||
+| FIREBASE_PROJECT_ID              | Firebase project ID for the current environment.                                                                 ||
+| FIREBASE_STORAGE_BUCKET          | Firebase Storage bucket name.                                                                                    ||
+| FIREBASE_MESSAGING_SENDER_ID     | Firebase Cloud Messaging sender ID.                                                                              ||
+| FIREBASE_APP_ID                  | Unique Firebase App ID used for identifying the project.                                                         ||
+| FIREBASE_MEASUREMENT_ID          | Google Analytics Measurement ID for Firebase analytics tracking.                                                 ||
