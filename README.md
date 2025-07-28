@@ -1,4 +1,4 @@
-## 🔧 Environment Variables
+### 🔧 Environment Variables
 
 These values are safe to expose and typically include configuration for non-sensitive settings such as service endpoints, feature toggles, and public keys.
 This separation ensures flexibility across environments (e.g., development, staging, production) without modifying source code.
