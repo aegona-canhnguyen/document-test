@@ -1,5 +1,8 @@
 ## 🔧 Environment Variables
 
+These values are safe to expose and typically include configuration for non-sensitive settings such as service endpoints, feature toggles, and public keys.
+This separation ensures flexibility across environments (e.g., development, staging, production) without modifying source code.
+
 | Variable                          | Description                                                                                                      | Example                              |
 |----------------------------------|------------------------------------------------------------------------------------------------------------------|--------------------------------------|
 | ASPNETCORE_ENVIRONMENT           | Specifies the runtime environment (e.g., Development, Staging, Production). Determines which appsettings file to load, logging behavior, and feature toggles. | Production|
@@ -24,3 +27,25 @@
 | FIREBASE_MESSAGING_SENDER_ID     | Firebase Cloud Messaging sender ID.                                                                              ||
 | FIREBASE_APP_ID                  | Unique Firebase App ID used for identifying the project.                                                         ||
 | FIREBASE_MEASUREMENT_ID          | Google Analytics Measurement ID for Firebase analytics tracking.                                                 ||
+
+## 🔐 Secrets (get from AWS Secrets Manager)
+
+The following sensitive configuration values are already defined in the Task Definition via AWS Secrets Manager (under `secrets`).  
+This approach follows best practices by separating secrets from the source code.
+
+| Key                                | Description                                                                 |
+|------------------------------------|-----------------------------------------------------------------------------|
+| Keys__OneSignaliOSKey              | OneSignal API key for sending push notifications to iOS devices.|
+| Keys__OneSignalAndroidKey          | OneSignal API key for sending push notifications to Android devices.|
+| Keys__OneSignalRestApiKey          | OneSignal REST API key used by the backend to authenticate when sending notifications.|
+| Keys__GoogleMapsApiKey             | Google Maps API key used for accessing map-related services such as geolocation, rendering, and search.|
+| KEYS_SYNCFUSION_LICENSE            | License key used to activate Syncfusion UI components and controls.|
+| OneSignalSetting__OneSignalWebKey  | OneSignal Web App Key used to authorize and send web push notifications.|
+| OneSignalSetting__IosAuthorization | OneSignal authorization key for iOS notifications, used in the Authorization header.|
+| OneSignalSetting__WebAuthorization | OneSignal authorization key for web notifications, used in the Authorization header.|
+| AppSettings__Secret                | Primary application secret used for token signing or data encryption (e.g., JWT signing key).|
+| AppSettings__SmtpUser              | Username used to authenticate with the SMTP server.|
+| AppSettings__SmtpPass              | Password used to authenticate with the SMTP server.|
+| CryptoConfig__Key                  | Custom encryption key used for encrypting or decrypting sensitive user data.|
+| MYSQL_USERNAME                     | Username used to authenticate with the MySQL database.|
+| MYSQL_PASSWORD                     | Password used to authenticate with the MySQL database.|
