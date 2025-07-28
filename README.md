@@ -2,27 +2,25 @@
 
 ## 🔧 Environment Variables
 
-| Variable Name                     | Description                                                                                  | Example or Note                     |
-|----------------------------------|----------------------------------------------------------------------------------------------|-------------------------------------|
-| `ASPNETCORE_ENVIRONMENT`         | Specifies the runtime environment (`Development`, `Staging`, `Production`)                  | Affects logging, config loading     |
-| `EnvironmentSettings__Production`| URL to access image folder from S3 for Production                                            | e.g., `https://s3.../images`        |
-| `AppSettings__RefreshTokenTTL`   | TTL (in days) for refresh tokens                                                             | e.g., `7`                           |
-| `AppSettings__EmailFrom`         | Default "From" address for system emails                                                     | e.g., `noreply@example.com`         |
-| `AppSettings__SmtpHost`          | SMTP server hostname                                                                         | e.g., `smtp.sendgrid.net`           |
-| `AppSettings__SmtpPort`          | SMTP port (commonly `587` for TLS)                                                           | e.g., `587`                         |
-| `OriginsSetting__AllowedOrigins` | List of allowed origins for CORS requests                                                    | e.g., `https://example.com`         |
-| `AWSConfig__BucketName`          | Name of the AWS S3 bucket used for storage access                                            | IAM Role-based access               |
-| `AppSettings__LinkDownloadAppIOS`| iOS App Store download link                                                                  | Public link                         |
-| `AppSettings__LinkDownloadAppAndroid` | Google Play Store download link                                                        | Public link                         |
-| `AppSettings__SupportInformation`| URL to support documentation                                                                 | e.g., `https://docs.magiqcloud...`  |
-| `ENVIRONMENT_API_URL`            | Base URL for the backend API                                                                 | e.g., `https://api.example.com`     |
-| `MYSQL_HOST`                     | Hostname or IP of the MySQL server                                                           | e.g., `127.0.0.1`                   |
-| `MYSQL_PORT`                     | MySQL server port                                                                            | e.g., `3306`                        |
-| `MYSQL_DATABASE`                 | Name of the target MySQL database                                                            | e.g., `engagement`                  |
-| `FIREBASE_API_KEY`               | Firebase API key for frontend                                                               | Store securely                      |
-| `FIREBASE_AUTH_DOMAIN`           | Firebase Auth domain                                                                         |                                     |
-| `FIREBASE_PROJECT_ID`            | Firebase project ID                                                                          |                                     |
-| `FIREBASE_STORAGE_BUCKET`        | Firebase Storage bucket name                                                                 |                                     |
-| `FIREBASE_MESSAGING_SENDER_ID`   | Firebase Messaging sender ID                                                                 |                                     |
-| `FIREBASE_APP_ID`                | Firebase App ID                                                                              |                                     |
-| `FIREBASE_MEASUREMENT_ID`        | Firebase Analytics Measurement ID                                                            |                                     |
+• ASPNETCORE_ENVIRONMENT: Specifies the runtime environment (e.g., Development, Staging, Production). Determines which appsettings file to load, logging behavior, and feature toggles.  
+• EnvironmentSettings__Production: define URL to get image folder from s3 accordingly  
+• AppSettings__RefreshTokenTTL: Time-to-live (TTL) for the refresh token, usually measured in days.  
+• AppSettings__EmailFrom: Default email address used in the "From" field when sending system emails.  
+• AppSettings__SmtpHost: Hostname of the SMTP server used for sending emails.  
+• AppSettings__SmtpPort: Port number used for SMTP communication (typically 587 for TLS).  
+• OriginsSetting__AllowedOrigins: List of allowed domains for CORS (Cross-Origin Resource Sharing) access to the API.  
+• AWSConfig__BucketName: Name of the AWS S3 bucket used to store or retrieve resources. Access is granted via container IAM role.  
+• AppSettings__LinkDownloadAppIOS: Public App Store link to download the iOS version of the mobile app.  
+• AppSettings__LinkDownloadAppAndroid: Google Play Store link to download the Android version of the mobile app.  
+• AppSettings__SupportInformation: Public support documentation URL for users (https://docs.magiqcloud.com/Engagement/).  
+• ENVIRONMENT_API_URL: Base URL of the backend API for the current environment.  
+• MYSQL_HOST: IP address or hostname of the MySQL database server.  
+• MYSQL_PORT: Port used by the MySQL database server.  
+• MYSQL_DATABASE: Name of the MySQL database to connect to.  
+• FIREBASE_API_KEY: Firebase API key used by frontend applications to access Firebase services.  
+• FIREBASE_AUTH_DOMAIN: Firebase Auth domain used during authentication.  
+• FIREBASE_PROJECT_ID: Firebase project ID for the current environment.  
+• FIREBASE_STORAGE_BUCKET: Firebase Storage bucket name.  
+• FIREBASE_MESSAGING_SENDER_ID: Firebase Cloud Messaging sender ID.  
+• FIREBASE_APP_ID: Unique Firebase App ID used for identifying the project.  
+• FIREBASE_MEASUREMENT_ID: Google Analytics Measurement ID for Firebase analytics tracking.
