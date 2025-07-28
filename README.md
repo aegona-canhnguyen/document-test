@@ -17,10 +17,10 @@
 | MYSQL_HOST                       | IP address or hostname of the MySQL database server.                                                             | 127.0.0.1                            |
 | MYSQL_PORT                       | Port used by the MySQL database server.                                                                          | 3306                                 |
 | MYSQL_DATABASE                   | Name of the MySQL database to connect to.                                                                        | engagement                           |
-| FIREBASE_API_KEY                 | Firebase API key used by frontend applications to access Firebase services.                                      | *stored in env/secret*               |
+| FIREBASE_API_KEY                 | Firebase API key used by frontend applications to access Firebase services.                                      |            |
 | FIREBASE_AUTH_DOMAIN             | Firebase Auth domain used during authentication.                                                                 | project-id.firebaseapp.com           |
 | FIREBASE_PROJECT_ID              | Firebase project ID for the current environment.                                                                 | community-engagement-73311           |
 | FIREBASE_STORAGE_BUCKET          | Firebase Storage bucket name.                                                                                    | community-engagement-73311.appspot.com |
 | FIREBASE_MESSAGING_SENDER_ID     | Firebase Cloud Messaging sender ID.                                                                              | 945046744357                         |
 | FIREBASE_APP_ID                  | Unique Firebase App ID used for identifying the project.                                                         | 1:945046744357:web:56bcbbe82a0d66caa403e0 |
-| FIREBASE_MEASUREMENT_ID          | Google Analytics Measurement ID for Firebase analytics tracking.                                                 | G-TC1QL0R04W                          |
+| FIREBASE_MEASUREMENT_ID          | Google Analytics Measurement ID for Firebase analytics tracking.                                                 |                           |
